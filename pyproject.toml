@@ -1,0 +1,13 @@
+[project]
+name = "ageless-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ageless-audio",
+    "fastapi[standard]>=0.143.2",
+]
+
+[tool.uv.sources]
+ageless-audio = { path = "../AgeLess_Companion", editable = true }
